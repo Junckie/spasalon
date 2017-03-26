@@ -1,0 +1,350 @@
+/* =================================================== Обнуление =============================================== */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre,  
+form, fieldset, input, p, blockquote, table, th, td, embed, object { 
+  padding: 0; 
+  margin: 0;  
+  } 
+fieldset, img, abbr { 
+  border: 0; 
+  } 
+address, caption, cite, code, dfn, em,  
+h1, h2, h3, h4, h5, h6, strong, th, var { 
+  font-weight: normal; 
+  font-style: normal; 
+  } 
+ul { 
+  list-style: none; 
+  } 
+caption, th { 
+  text-align: left; 
+  } 
+h1, h2, h3, h4, h5, h6 { 
+  font-size: 1.0em; 
+  } 
+q:before, q:after { 
+  content: ''; 
+  } 
+a, ins { 
+  text-decoration: none; 
+  }
+/* ======================================= Основные стили ============================================= */
+body {														/*  стили для всего тела */
+	font-family: Arial, Helvetica, sans-serif;     /*  шрифт */
+	font-size: 13px;							/*  размер шрифта */
+	color: #000000;																 
+	background: url(../images/bg.jpg)  top center  no-repeat #ffffff;	/* фоновая картинка */		
+}
+#main_body{
+	background-image: url(../images/header-bg.jpg);			/* картинка на заднем плане */
+}
+a {
+	color: #0DC2CE;				/* цвет ссылки */
+}
+a:hover {
+	text-decoration: underline;			/* подчеркивание ссылки при наведении */
+}
+p {margin:2px 0 18px 0;line-height: 18px;}
+h1 {font-size:30px;line-height:32px;margin:2px 0 18px 0;font-weight:300;}
+h2 {font-size:26px;line-height:32px;margin:2px 0 18px 0;font-weight:300;}
+h3 {font-size:22px;line-height:26px;margin:2px 0 18px 0;color:#0DC2CE;font-weight:normal;}
+h4 {font-size:12px;line-height:16px;margin:2px 0 4px 0;font-weight:bold;}
+
+.clear{
+	clear: both;		/* обтекание элемента */
+}
+.main{
+	margin: 0 auto;		/* убираем отступы контент топа */
+	width: 960px;		/* ширина контент топа */
+}
+.more_last{
+	margin-right:0 !important;		/* отступ справа для контент боттом */
+}
+/* ------------------------------------------Хедер-------------------------------------------- */
+#header{
+	background: url(../images/menu-tail.png)  top center  repeat-x #f0f0f0;			/* задний фон для хедера*/
+	height: 104px;				/* высота */
+	text-align: center;			/* выравнивание текста по центру */ 
+	font-size: 25px;			/* размер шрифта */
+}
+#header a{
+	background-image: url(../images/menu-spacer.gif);
+	background-position: center right;						
+	background-repeat: no-repeat;
+}
+.last_a{
+	background-image: none !important;
+}
+.menu{
+	padding: 40px 0;		/* величина поля */
+}
+#header a{					/* величина и цвет поля ссылки */
+	color: #000000;			/* цвет */
+	padding: 40px 35px 45px 35px;		/* поля вокруг текста */
+}
+#header a:hover, .active{						/* стиль для ссылки активной */
+	background-image: none !important;
+	text-decoration: none;
+	color: #ffffff !important;
+	background-color: #000000;
+	border-radius: 0 0 8px 8px;
+}
+
+/* -----------------------------------------Основной контент-------------------------------------- */
+#logo{
+	height: 500px;				/* высота картинки */
+}
+#logo img, #logo2 img{
+	margin:3% 0 0 10%;			/* отступ сверху и справа */
+}
+#content_top, #content_bottom, footer{
+		padding:10px 0;			/* поля сверху рамки */
+}
+#latest_news {
+	width: 22%;			/* ширина */
+	margin: 0 5% 0 0;	/* отступ справа */
+	float: left;		/* обтекание слева */
+}
+#latest_news a{
+	font-weight: 700;
+	text-decoration: underline;
+}
+#latest_news a:hover{
+	font-weight: 700;
+	text-decoration: none;
+}
+#popular{
+	width: 45%;
+	margin: 0 3% 0 0;
+	float: left;	
+}
+.popular_child {
+	overflow:hidden;
+	margin-bottom: 20px;
+}
+.popular_child img{
+	border: 1px solid #f0f0f0;
+	padding: 5px;
+	margin: 0 20px 0 0;
+	float:left;
+	background-color: #ffffff;
+}
+.popular_child h3{
+	margin-bottom: 6px;
+}
+.border_top{
+	padding-top: 20px;
+	border-top: 1px solid #f0f0f0;
+}
+#our_services{
+	width: 22%;
+	float: left;
+}
+#our_services a{
+	font-weight: 700;
+	color: #000000;
+	text-decoration: underline;
+}
+#our_services a:hover{
+	font-weight: 700;
+	color: #000000;
+	text-decoration: none;
+}
+.our_child{
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+.our_child img{
+	float: left;
+	margin: 0 20px 0 0;
+}
+#content_bottom{
+	background-color: #f0f0f0;
+}
+#content_bottom h2{
+	margin-bottom: 1px;
+}
+.more{
+	width: 32%;
+	float: left;
+	margin: 0 2% 0 0;
+}
+.read{
+	font-size: 16px;
+	display: inline-block;
+	background-color:#0DC2CE;
+	color: white;
+	padding: 8px;
+	border-radius: 8px 8px 8px 8px;
+	margin-right: 10px;
+	border: none;
+	cursor: pointer;
+}
+.read:hover {
+	background-color: #000000;
+	text-decoration: none;
+}
+
+/* ----------------------------------------Футер-------------------------------------------*/
+footer{
+	background-color: #000000;
+	color: #ffffff;
+}
+#footer_left{
+	width: 65%;
+	margin-right:5%;
+	float:left;
+}
+#footer_left a:hover{
+	color: #ffffff;
+}
+#footer_left p{
+	margin-bottom:12px;
+}
+.list-services {
+	overflow:hidden;
+}
+.list-services li{
+	float:left;
+	padding-right:7px;
+}
+.list-services li a{
+	width:18px;
+	height:18px;
+	display:block;
+	background-image:url(../images/social-icons.png);
+}
+.item-2{
+	position: -25px 0;
+}
+.item-3{
+	position: -50px 0;
+}
+.item-4{
+	position: -75px 0;
+}
+#footer_right{
+	width: 30%;
+	float:left;
+}
+#footer_right h3{
+	margin-bottom: 0;
+	line-height:26px;
+}
+#footer_right h2{
+	line-height:20px;
+}
+#footer_right span{
+	color: #f0f0f0;
+}
+
+/* ----------------------------------------Services-------------------------------------------*/
+
+#operations{
+	width: 70%;
+	margin: 0 3% 0 0;
+	float: left;	
+}
+.sed{
+	overflow: hidden;
+}
+.sed img {
+	border: 1px solid #f0f0f0;
+	padding: 3px;
+	margin-right: 15px;
+	float:left;
+}
+.serv_left{
+	width: 27%;
+	float: left;
+}
+.serv_left ul li{
+	background: url(../images/marker.gif) left center no-repeat;
+	padding-left: 15px;
+	margin-bottom: 10px;
+}
+.more_therapies{
+	width: 48%;
+	float: left;
+	margin-right: 4%;
+}
+.more_therapies a{
+	font-weight: bold;
+}
+/* ----------------------------------------Therapies-------------------------------------------*/
+.therapies{
+	float: left;
+	width: 32%;
+	margin-right: 2%;
+	margin-bottom: 20px;
+}
+
+#therapies img{
+	border: 1px solid #f0f0f0;
+	padding: 3px;
+	margin-right: 15px;
+	width:99%;
+}
+/* ----------------------------------------Our Staff-------------------------------------------*/
+.our_staff .list-services{
+	float:right;
+}
+.our_staff  h3{
+	display:inline-block;
+}
+.stylist , .esthetican , .guest_services{
+	padding: 25px 0 25px 0;
+}
+.stylist img, .esthetican img, .guest_services img{
+	border: 1px solid #f0f0f0;
+	padding: 5px;
+	margin: 5px 25px 5px 0;
+	float:left;
+}
+/* ----------------------------------------Contacts-------------------------------------------*/
+#contact_left{
+	width: 600px;
+	margin-right: 60px;
+	float: left;
+}
+#contact_left table{
+	width: 600px;
+}
+#contact_left table tr td:first-child{
+	width: 20%;
+}
+#contact_left table td{
+	padding: 0 0 5px 0;
+	vertical-align: top;
+}
+#contact_left  textarea{
+	height: 170px;
+	width: 450px;
+	border-color: #E4E4E4;
+}
+#contact_left input[type="text"]{
+	height: 20px;
+	width: 300px;
+	border: 1px solid #E4E4E4;
+}
+.contact_right{
+	float: left;
+	width: 300px;
+	float: left;
+}
+.contact_right h4{
+	margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
